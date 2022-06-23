@@ -2,10 +2,6 @@
 if(process.env.NODE_ENV !== "production"){
     require('dotenv').config();
 }
-
-
-
-
 const express = require('express')
 const app = express();
 const port = process.env.PORT || 8080 ;
@@ -46,9 +42,6 @@ mongoose.connect(dbUrl)
     console.log('Oh No Error!!')
     console.log(err);
 })
-
-
-
 
 // const db = mongoose.connection;
 // db.on('error', console.error.bind(console, 'connection error'));
