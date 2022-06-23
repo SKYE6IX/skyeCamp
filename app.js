@@ -202,6 +202,9 @@ app.use('/campgrounds', reviewRoutes);
 //User routes
 app.use('/', userRoutes);
 
+
+
+
 // Using the Error class to deal with url route that isn't recoqnize
 app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found!', 404 ))
