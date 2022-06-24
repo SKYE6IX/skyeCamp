@@ -119,7 +119,7 @@ passport.deserializeUser(User.deserializeUser())
 
 // this middleware automatically have acess to all template and routes;
 app.use((req, res, next) => {
-    res.locals.CurrentUser = req.user; // This help to show log in and out when it neccessary. like user helper(but needed to be run in our template)
+    res.locals.currentuser = req.user; // This help to show log in and out when it neccessary. like user helper(but needed to be run in our template)
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
