@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,30 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="/css/app.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
     <link rel="shortcut icon" href="#" />
     <title>SkyeCamp</title>
 </head>
+
 <body>
     <%- include('../partials/navbar') %>
-    <main class="all-page">
-      <%- include('../partials/flash') %>
-        <%- body %>
-    </main>
-    <%- include('../partials/footers') %>
+        <main class="all-page">
+            <%- include('../partials/flash') %>
+                <%- body %>
+        </main>
+        <%- include('../partials/footers') %>
 
 
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
 
-    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+            <script src="/bootstrap/js/bootstrap.bundle.js"></script>
 
-    <script src="/javaScript/validateForm.js"></script>
+            <script src="/javaScript/validateForm.js"></script>
 
 </body>
+
 </html>
